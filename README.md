@@ -6,7 +6,7 @@ I tested it on a software requirements document (SRS) for a project called Verix
 
 ## Demo
 
-Watch the demo: [demo.mp4](demo.mp4)
+Watch the demo: [demo.mp4](https://github.com/user-attachments/assets/7ecbc03e-91d0-40ae-870d-d17c9d07197f)
 
 ## Techniques used
 

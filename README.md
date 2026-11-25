@@ -1,4 +1,4 @@
-# auto-merging-rag-eval
+# Auto-merging-rag-eval
 
 A RAG system over PDF documents that uses auto-merging retrieval and cross-encoder reranking. It compares a 2-layer and a 3-layer chunk hierarchy using the RAG triad, and includes a Streamlit app to see both side by side.
 
@@ -6,7 +6,13 @@ I tested it on a software requirements document (SRS) for a project called Verix
 
 ## Demo
 
-Watch the demo: [demo.mp4](https://github.com/user-attachments/assets/7ecbc03e-91d0-40ae-870d-d17c9d07197f)
+https://github.com/user-attachments/assets/REPLACE-WITH-YOUR-VIDEO-ID
+
+If the player does not load, open [demo.mp4](demo.mp4).
+
+## Workflow
+
+![Workflow](workflow.svg)
 
 ## Techniques used
 
@@ -67,6 +73,7 @@ Results from my run (fill in after running `eval_triad.py`):
 - `eval_triad.py`: runs the questions on both configs and saves `results.csv` and `summary.csv`
 - `app.py`: Streamlit app that shows both answers, the retrieved chunks and the triad scores
 - `demo.mp4`: screen recording of the app
+- `workflow.svg`: workflow diagram used in this README
 
 ## Setup
 
@@ -95,3 +102,4 @@ Upload a PDF in the sidebar and ask questions. Both configs answer each question
 - Indexes are saved to `idx_*` folders. Delete them if you change the document or chunk sizes.
 - The judge is an LLM, so scores are approximate. Use 10 or more questions before drawing conclusions.
 - Groq changes its model list often. If a model returns a 404, pick another from `https://api.groq.com/openai/v1/models`.
+- 
